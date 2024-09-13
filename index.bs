@@ -331,7 +331,13 @@ key</dfn> given null or a [=dip-struct|document isolation policy=]
 5. Set *crossOriginIsolationKey* to {*origin*, *crossOriginIsolationMode*}. 
 6. Return *crossOriginIsolationKey*.
 
+</div>
+
 #### The headers #### {#dip-headers}
+
+Add a new subsection "The headers" of the previous one.
+
+<div class="monkey-patch">
 
 The '<dfn lt="dip-header">Document-Isolation-Policy</dfn>' and
 '<dfn lt="dip-report-only-header">Document-Isolation-Policy-Report-Only</dfn>'
@@ -414,7 +420,7 @@ Add step 6 and 7 to the [=create a policy container from a fetch response =]:
 
 6. If *environment* is non-null, then set *result*'s
    [=policy-container-dip|document isolation policy=] to the result of
-   [=obtain-dip|obatining a document isolation policy=] given *response* and
+   [=obtain-dip|obtaining a document isolation policy=] given *response* and
    *environment*.
 
 7. Set *result*'s [=policy-container-coi-key|agent cluster cross-origin
